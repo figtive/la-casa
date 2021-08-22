@@ -1,28 +1,50 @@
-<script lang="ts">
-  export let name: string;
+<script>
+  import Logo from './components/Logo.svelte';
 </script>
 
 <main>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
-    how to build Svelte apps.
-  </p>
+  <div class="title">
+    <Logo />
+    <div class="title-text">
+      <div class="title-p1">FIGHT</div>
+      <div class="title-p2">interactive</div>
+    </div>
+  </div>
 </main>
 
 <style>
   main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-text {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 3.7em;
+    margin-left: 14px;
+  }
+
+  .title-p1 {
+    color: #ff6600;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
+  }
+
+  .title-p2 {
+    padding-left: 0.05em;
+    color: #bbb;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 0.5em;
   }
 
   @media (min-width: 640px) {
