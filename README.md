@@ -17,6 +17,6 @@ $ npm install
 $ npm run dev
 ```
 
-# License
+## License
 
 This project is licensed under the [MIT License](https://github.com/figtive/la-casa/blob/master/LICENSE).
