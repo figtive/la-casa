@@ -1,0 +1,39 @@
+name: Build
+
+on: push
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 12.x
+      - name: Install Dependencies
+        run: npm install
+      - name: eslint
+        run: npm run check
+  build:
+    name: Build
+    runs-on: Ubuntu-20.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 12.x
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Archive Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: |
+            public/build/
