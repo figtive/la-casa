@@ -10,6 +10,17 @@
       <div class="title-p2">interactive</div>
     </div>
   </div>
+  <div class="links">
+    <a href="https://github.com/figtive" target="_blank" rel="noopener">
+      <i class="fab fa-github" />
+    </a>
+    <a href="https://steamcommunity.com/groups/figtive" target="_blank" rel="noopener">
+      <i class="fab fa-steam" />
+    </a>
+  </div>
+  <div class="bogos">
+    👽
+  </div>
 </main>
 
 <style>
@@ -19,6 +30,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    user-select: none;
   }
 
   .title {
@@ -45,6 +57,27 @@
     font-weight: 300;
     font-size: 1.2em;
     line-height: 0.5em;
+  }
+
+  .links {
+    margin-top: 32px;
+    font-size: 2em;
+  }
+
+  .links a {
+    margin: 0 8px;
+    color: #bbbbbb22;
+    transition: 0.25s;
+  }
+
+  .links a:hover {
+    color: #ff660055;
+  }
+
+  .bogos {
+    position: absolute;
+    opacity: 0.05;
+    bottom: 5vh;
   }
 
   @media (min-width: 640px) {
