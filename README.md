@@ -4,9 +4,9 @@
 
 ## Service
 
-|   Name    | Stack              |
-| :-------: | ------------------ |
-| Front-end | TypeScript, Svelte |
+|   Name    | Stack                 |
+| :-------: | --------------------- |
+| Front-end | TypeScript, SvelteKit |
 
 ## Develop
 

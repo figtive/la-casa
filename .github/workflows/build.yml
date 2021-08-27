@@ -14,9 +14,9 @@ jobs:
         with:
           node-version: 12.x
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
       - name: eslint
-        run: npm run check
+        run: npm run lint
   build:
     name: Build
     runs-on: Ubuntu-20.04
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Archive Artifacts
@@ -36,4 +36,4 @@ jobs:
         with:
           name: build
           path: |
-            public/build/
+            build/
