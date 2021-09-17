@@ -5,10 +5,10 @@
 <main>
   <div class="title">
     <Logo />
-    <div class="title-text">
+    <h1 class="title-text">
       <div class="title-p1">FIGHT</div>
       <div class="title-p2">interactive</div>
-    </div>
+    </h1>
   </div>
   <div class="links">
     <a href="https://github.com/figtive" target="_blank" rel="noopener">
@@ -18,7 +18,7 @@
       <i class="fab fa-steam" />
     </a>
   </div>
-  <div class="bogos">👽</div>
+  <span class="bogos">👽</span>
 </main>
 
 <style>
@@ -37,6 +37,7 @@
   .title-text {
     font-family: 'Urbanist', sans-serif;
     font-size: 3.7em;
+    margin: 0;
     margin-left: 14px;
   }
   .title-p1 {
