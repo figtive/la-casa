@@ -5,20 +5,23 @@
 <main>
   <div class="title">
     <Logo />
-    <div class="title-text">
+    <h1 class="title-text">
       <div class="title-p1">FIGHT</div>
       <div class="title-p2">interactive</div>
-    </div>
+    </h1>
   </div>
   <div class="links">
-    <a href="https://github.com/figtive" target="_blank" rel="noopener">
-      <i class="fab fa-github" />
+    <a href="https://github.com/figtive" aria-label="GitHub" target="_blank" rel="noopener">
+      <i class="fab fa-github-square" />
     </a>
-    <a href="https://steamcommunity.com/groups/figtive" target="_blank" rel="noopener">
-      <i class="fab fa-steam" />
+    <a href="https://twitter.com/figtive" aria-label="Twitter" target="_blank" rel="noopener">
+      <i class="fab fa-twitter-square" />
+    </a>
+    <a href="https://steamcommunity.com/groups/figtive" aria-label="Steam" target="_blank" rel="noopener">
+      <i class="fab fa-steam-square" />
     </a>
   </div>
-  <div class="bogos">👽</div>
+  <span class="bogos">👽</span>
 </main>
 
 <style>
@@ -37,6 +40,7 @@
   .title-text {
     font-family: 'Urbanist', sans-serif;
     font-size: 3.7em;
+    margin: 0;
     margin-left: 14px;
   }
   .title-p1 {

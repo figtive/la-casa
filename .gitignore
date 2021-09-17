@@ -3,6 +3,7 @@ node_modules
 /build
 /.svelte-kit
 /package
+/public
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,jetbrains+all,node
