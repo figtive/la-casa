@@ -11,11 +11,14 @@
     </h1>
   </div>
   <div class="links">
-    <a href="https://github.com/figtive" target="_blank" rel="noopener">
-      <i class="fab fa-github" />
+    <a href="https://github.com/figtive" aria-label="GitHub" target="_blank" rel="noopener">
+      <i class="fab fa-github-square" />
     </a>
-    <a href="https://steamcommunity.com/groups/figtive" target="_blank" rel="noopener">
-      <i class="fab fa-steam" />
+    <a href="https://twitter.com/figtive" aria-label="Twitter" target="_blank" rel="noopener">
+      <i class="fab fa-twitter-square" />
+    </a>
+    <a href="https://steamcommunity.com/groups/figtive" aria-label="Steam" target="_blank" rel="noopener">
+      <i class="fab fa-steam-square" />
     </a>
   </div>
   <span class="bogos">👽</span>
