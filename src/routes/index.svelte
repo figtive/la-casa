@@ -2,29 +2,41 @@
   import Logo from '$lib/Logo.svelte';
 </script>
 
-<main>
-  <div class="title">
-    <Logo />
-    <h1 class="title-text">
-      <div class="title-p1">FIGHT</div>
-      <div class="title-p2">interactive</div>
-    </h1>
-  </div>
-  <div class="links">
-    <a href="https://github.com/figtive" aria-label="GitHub" target="_blank" rel="noopener">
-      <i class="fab fa-github-square" />
-    </a>
-    <a href="https://twitter.com/figtive" aria-label="Twitter" target="_blank" rel="noopener">
-      <i class="fab fa-twitter-square" />
-    </a>
-    <a href="https://steamcommunity.com/groups/figtive" aria-label="Steam" target="_blank" rel="noopener">
-      <i class="fab fa-steam-square" />
-    </a>
-  </div>
-  <span class="bogos">👽</span>
-</main>
+<div class="main-container">
+  <main>
+    <div class="title">
+      <Logo />
+      <h1 class="title-text">
+        <div class="title-p1">FIGHT</div>
+        <div class="title-p2">interactive</div>
+      </h1>
+    </div>
+    <div class="links">
+      <a href="https://github.com/figtive" aria-label="GitHub" target="_blank" rel="noopener">
+        <i class="fab fa-github-square" />
+      </a>
+      <a href="https://twitter.com/figtive" aria-label="Twitter" target="_blank" rel="noopener">
+        <i class="fab fa-twitter-square" />
+      </a>
+      <a href="https://steamcommunity.com/groups/figtive" aria-label="Steam" target="_blank" rel="noopener">
+        <i class="fab fa-steam-square" />
+      </a>
+    </div>
+    <span class="bogos">👽</span>
+  </main>
+</div>
 
 <style>
+  .main-container {
+    background-color: #222;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+      sans-serif;
+  }
   main {
     min-height: 100vh;
     display: flex;
