@@ -1,3 +1,8 @@
+<script lang="ts">
+  import Title from '$lib/Title.svelte';
+</script>
+
+<Title title="daystram" />
 <iframe src="https://daystram.com" title="daystram" id="daystram-iframe" />
 
 <style>
