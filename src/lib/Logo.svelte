@@ -17,5 +17,6 @@
 <style>
   .logo {
     width: 128px;
+    height: 174px;
   }
 </style>

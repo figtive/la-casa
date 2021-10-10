@@ -8,6 +8,9 @@ const config = {
   preprocess: [
     preprocess({
       postcss: true,
+      scss: {
+        prependData: '@import "src/variables.scss";',
+      },
     }),
   ],
 
@@ -16,6 +19,15 @@ const config = {
     target: '#svelte',
     adapter: adapter(),
     trailingSlash: 'never',
+    vite: {
+      css: {
+        preprocessorOptions: {
+          scss: {
+            additionalData: '@import "src/variables.scss";',
+          },
+        },
+      },
+    },
   },
 };
 
