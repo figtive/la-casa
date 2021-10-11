@@ -31,7 +31,6 @@
 
     .title {
       font-family: 'Urbanist', sans-serif;
-      margin: 0;
       &-h1 {
         @extend .title;
         color: $color-primary;
