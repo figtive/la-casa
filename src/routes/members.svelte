@@ -5,25 +5,34 @@
     {
       name: 'Danny August Ramaputra',
       username: 'daystram',
-      path: 'daystram',
     },
     {
       name: 'Wahyu Ananda Duli Tokan',
       username: 'wahyuadt',
-      path: 'wahyuadt',
     },
   ];
 </script>
 
-<Title title="Members" />
+<Title title="Members" description="Fight Interactive members" />
 
 <div class="main">
   <div class="container mx-auto">
     <h1 class="title-h1">Members</h1>
-    <ul>
-      {#each members as member (member.path)}
-        <li class="mb-4">{member.name} <a href="/-/{member.path}" class="link">{member.username}</a></li>
-      {/each}
-    </ul>
+    <table class="table-auto list">
+      <tbody>
+        {#each members as member (member.username)}
+          <tr>
+            <td class="pr-8"><a href="/-/{member.username}" class="link">{member.username}</a></td>
+            <td> {member.name}</td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
   </div>
 </div>
+
+<style lang="scss">
+  td {
+    height: 3rem;
+  }
+</style>
