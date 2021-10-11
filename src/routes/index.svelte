@@ -1,6 +1,9 @@
 <script>
   import Logo from '$lib/Logo.svelte';
+  import Title from '$lib/Title.svelte';
 </script>
+
+<Title title="" />
 
 <div class="main">
   <div class="logo">
