@@ -2,7 +2,8 @@
   import Title from '$lib/Title.svelte';
 </script>
 
-<Title title="daystram" />
+<Title title="daystram" description="Danny August Ramaputra" />
+
 <iframe src="https://daystram.com" title="daystram" id="daystram-iframe" />
 
 <style>
