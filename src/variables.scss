@@ -1,1 +1,9 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
+
+$navbar-height: 64px;
+
+$color-primary: #ff6600;
+$color-secondary: #bbbbbb;
+$color-background: #222;
+
+$transition-default: cubic-bezier(0.75, 0.75, 0.25, 1);
