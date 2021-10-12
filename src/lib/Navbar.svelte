@@ -1,21 +1,22 @@
 <script lang="ts">
   import Logo from '$lib/Logo.svelte';
   import { page } from '$app/stores';
+  import { fly } from 'svelte/transition';
 </script>
 
 <nav class="navbar">
   <div class="navbar-container">
     {#if $page.path !== '/'}
-      <div class="navbar-brand">
-        <a href="/">
-          <Logo />
-        </a>
-      </div>
+      {#key $page.path}
+        <div class="navbar-brand" in:fly={{ x: -72, duration: 500 }} out:fly={{ x: 72, duration: 500 }}>
+          <a href="/">
+            <Logo />
+          </a>
+        </div>
+      {/key}
     {/if}
     <div class="flex-grow" />
-    <div>
-      <a href="/members" class="navbar-item">Members</a>
-    </div>
+    <a href="/members" class="navbar-item">Members</a>
   </div>
 </nav>
 
@@ -46,6 +47,10 @@
       font-weight: 800;
       text-decoration: none;
       position: relative;
+      margin-left: 24px;
+      &:first-of-type {
+        margin-left: 0;
+      }
       &:hover {
         text-decoration: none;
         &::before {
