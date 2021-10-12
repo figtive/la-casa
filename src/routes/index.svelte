@@ -1,93 +1,88 @@
 <script>
   import Logo from '$lib/Logo.svelte';
+  import Title from '$lib/Title.svelte';
 </script>
 
-<div class="main-container">
-  <main>
-    <div class="title">
-      <Logo />
-      <h1 class="title-text">
-        <div class="title-p1">FIGHT</div>
-        <div class="title-p2">interactive</div>
-      </h1>
-    </div>
-    <div class="links">
-      <a href="https://github.com/figtive" aria-label="GitHub" target="_blank" rel="noopener">
-        <i class="fab fa-github-square" />
-      </a>
-      <a href="https://twitter.com/figtive" aria-label="Twitter" target="_blank" rel="noopener">
-        <i class="fab fa-twitter-square" />
-      </a>
-      <a href="https://steamcommunity.com/groups/figtive" aria-label="Steam" target="_blank" rel="noopener">
-        <i class="fab fa-steam-square" />
-      </a>
-    </div>
-    <span class="bogos">👽</span>
-  </main>
-</div>
+<Title title="" />
 
-<style>
-  .main-container {
-    background-color: #222;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: #333;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
-      sans-serif;
-  }
-  main {
-    min-height: 100vh;
+<div class="main">
+  <div class="logo">
+    <div class="logo-icon">
+      <Logo />
+    </div>
+    <div class="logo-text">
+      <div class="title-h1 logo-text-fight">FIGHT</div>
+      <div class="title-h2 logo-text-interactive">interactive</div>
+    </div>
+  </div>
+  <div class="links">
+    <a href="https://github.com/figtive" aria-label="GitHub" target="_blank" rel="noopener">
+      <i class="fab fa-github-square" />
+    </a>
+    <a href="https://twitter.com/figtive" aria-label="Twitter" target="_blank" rel="noopener">
+      <i class="fab fa-twitter-square" />
+    </a>
+    <a href="https://steamcommunity.com/groups/figtive" aria-label="Steam" target="_blank" rel="noopener">
+      <i class="fab fa-steam-square" />
+    </a>
+  </div>
+</div>
+<span class="bogos">👽</span>
+
+<style lang="scss">
+  .main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    user-select: none;
+    // override default navbar padding for index page
+    padding-top: 0;
+    height: 100vh;
   }
-  .title {
+  .logo {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+    &-icon {
+      width: 128px;
+      height: 174px;
+    }
+    &-text {
+      margin-left: 14px;
+      &-fight {
+        font-size: 7.4rem;
+        line-height: calc(7.4rem + 1rem);
+      }
+      &-interactive {
+        font-size: 4.44rem;
+        line-height: calc(4.44rem + 1rem);
+        margin-top: -2rem;
+        padding-left: 4px;
+      }
+    }
   }
-  .title-text {
-    font-family: 'Urbanist', sans-serif;
-    font-size: 3.7em;
-    margin: 0;
-    margin-left: 14px;
-  }
-  .title-p1 {
-    color: #ff6600;
-    font-size: 2em;
-    font-weight: 700;
-    line-height: 1em;
-  }
-  .title-p2 {
-    padding-left: 0.05em;
-    color: #bbb;
-    font-weight: 300;
-    font-size: 1.2em;
-    line-height: 0.5em;
-  }
+
   .links {
     margin-top: 32px;
-    font-size: 2em;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    a {
+      margin: 0 8px;
+      color: transparentize($color: $color-secondary, $amount: 0.75);
+      transition: 0.25s;
+      :hover {
+        color: transparentize($color: $color-primary, $amount: 0.5);
+      }
+    }
   }
-  .links a {
-    margin: 0 8px;
-    color: #bbbbbb22;
-    transition: 0.25s;
-  }
-  .links a:hover {
-    color: #ff660055;
-  }
+
   .bogos {
     position: absolute;
     opacity: 0.05;
     bottom: 5vh;
-  }
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
+    width: 100%;
+    text-align: center;
   }
 </style>
