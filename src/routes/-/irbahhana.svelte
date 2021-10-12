@@ -1,5 +1,8 @@
 <script>
+  import Title from '../../lib/Title.svelte';
 </script>
+
+<Title title="Irbahhana" description="Muhammad Naufal Irbahhana" />
 
 <div class="main-container">
   <div class="header">
@@ -11,10 +14,6 @@
 </div>
 
 <style>
-  p {
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
 
   .header {
     display: flex;
