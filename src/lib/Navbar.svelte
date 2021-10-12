@@ -16,9 +16,7 @@
       {/key}
     {/if}
     <div class="flex-grow" />
-    <div>
-      <a href="/members" class="navbar-item">Members</a>
-    </div>
+    <a href="/members" class="navbar-item">Members</a>
   </div>
 </nav>
 
@@ -49,6 +47,10 @@
       font-weight: 800;
       text-decoration: none;
       position: relative;
+      margin-left: 24px;
+      &:first-of-type {
+        margin-left: 0;
+      }
       &:hover {
         text-decoration: none;
         &::before {
