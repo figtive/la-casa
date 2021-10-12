@@ -1,12 +1,31 @@
+<script context="module" lang="ts">
+  export const load = async ({ page }) => ({
+    props: {
+      key: page.path,
+    },
+  });
+</script>
+
 <script lang="ts">
   import Navbar from '$lib/Navbar.svelte';
+  import { fly } from 'svelte/transition';
   import '../tailwind.css';
+
+  export let key;
 </script>
 
 <Navbar />
 
 <div class="root-container">
-  <slot />
+  {#key key}
+    <div
+      class="transition-wrapper"
+      in:fly={{ x: -8, duration: 250, delay: 250 }}
+      out:fly={{ x: 8, duration: 250, delay: 0 }}
+    >
+      <slot />
+    </div>
+  {/key}
 </div>
 
 <style lang="scss" global>
@@ -16,6 +35,9 @@
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
+    .transition-wrapper {
+      all: inherit;
+    }
   }
 
   .main {
