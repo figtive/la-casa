@@ -11,9 +11,9 @@
       username: 'wahyuadt',
     },
     {
-      name:'Muhammad Naufal Irbahhana',
-      username: 'irbahhana'
-    }
+      name: 'Muhammad Naufal Irbahhana',
+      username: 'irbahhana',
+    },
   ];
 </script>
 
