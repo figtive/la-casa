@@ -7,12 +7,12 @@
       username: 'daystram',
     },
     {
-      name: 'Wahyu Ananda Duli Tokan',
-      username: 'wahyuadt',
-    },
-    {
       name: 'Muhammad Naufal Irbahhana',
       username: 'irbahhana',
+    },
+    {
+      name: 'Wahyu Ananda Duli Tokan',
+      username: 'wahyuadt',
     },
   ];
 </script>
