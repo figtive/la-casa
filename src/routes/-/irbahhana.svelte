@@ -14,7 +14,6 @@
 </div>
 
 <style>
-
   .header {
     display: flex;
     align-items: center;
