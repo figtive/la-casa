@@ -36,7 +36,7 @@
   },
   "type": "module",
   "lint-staged": {
-    "src/*.{js,ts,svelte,html,css}": "prettier --write"
+    "src/*.{js,ts,svelte,html,css}": "npm run format"
   },
   "husky": {
     "hooks": {
