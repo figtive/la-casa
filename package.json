@@ -37,10 +37,5 @@
   "type": "module",
   "lint-staged": {
     "src/*.{js,ts,svelte,html,css}": "npm run format"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
