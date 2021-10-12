@@ -28,7 +28,7 @@
     .i-shim path {
       opacity: 0.65;
       fill: $color-primary;
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.5s $transition-default;
       transform: translateX(-75%);
     }
     &:hover .i-shim path {
