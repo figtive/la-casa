@@ -10,6 +10,10 @@
       name: 'Wahyu Ananda Duli Tokan',
       username: 'wahyuadt',
     },
+    {
+      name:'Muhammad Naufal Irbahhana',
+      username: 'irbahhana'
+    }
   ];
 </script>
 
