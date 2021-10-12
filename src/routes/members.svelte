@@ -22,7 +22,9 @@
       <tbody>
         {#each members as member (member.username)}
           <tr>
-            <td class="pr-8"><a href="/-/{member.username}" class="link">{member.username}</a></td>
+            <td class="pr-8">
+              <a target="_blank" rel="noopener" href="/-/{member.username}" class="link">{member.username}</a>
+            </td>
             <td> {member.name}</td>
           </tr>
         {/each}
