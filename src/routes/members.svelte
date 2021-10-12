@@ -1,10 +1,14 @@
 <script lang="ts">
   import Title from '$lib/Title.svelte';
 
-  const members = [
+  const members: { name: string; username: string }[] = [
     {
       name: 'Danny August Ramaputra',
       username: 'daystram',
+    },
+    {
+      name: 'Muhamad Ilman Nafian',
+      username: 'ilman',
     },
     {
       name: 'Wahyu Ananda Duli Tokan',
