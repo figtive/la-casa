@@ -69,6 +69,14 @@
         padding-left: 4px;
       }
     }
+    @media (max-width: 1024px) {
+      transform: scale(0.75);
+      transform-origin: bottom;
+    }
+    @media (max-width: 640px) {
+      transform: scale(0.5);
+      transform-origin: bottom;
+    }
   }
 
   .links {
