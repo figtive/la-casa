@@ -9,7 +9,7 @@
         props: {
           projects: await res.json(),
         },
-        maxage: 60 * 60,
+        maxage: 60 * 30,
       };
     }
     return {
