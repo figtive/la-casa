@@ -24,11 +24,11 @@
 <Title title="Members" description="Fight Interactive members" />
 
 <div class="main">
-  <div class="container mx-auto">
+  <div class="container mx-auto px-4">
     <h1 class="title-h1">Members</h1>
     <table class="table-auto list">
       <tbody>
-        {#each members as member (member.username)}
+        {#each members as member}
           <tr>
             <td class="pr-8">
               <a target="_blank" rel="noopener" href="/-/{member.username}" class="link">{member.username}</a>
