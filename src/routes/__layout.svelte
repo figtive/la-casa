@@ -8,7 +8,7 @@
 
 <script lang="ts">
   import Navbar from '$lib/Navbar.svelte';
-  import { fly } from 'svelte/transition';
+  import RouteTransition from '$lib/RouteTransition.svelte';
   import '../tailwind.css';
 
   export let key;
@@ -17,32 +17,23 @@
 <Navbar />
 
 <div class="root-container">
-  {#key key}
-    <div
-      class="transition-wrapper"
-      in:fly={{ x: -8, duration: 250, delay: 250 }}
-      out:fly={{ x: 8, duration: 250, delay: 0 }}
-    >
-      <slot />
-    </div>
-  {/key}
+  <RouteTransition refresh={key}>
+    <slot />
+  </RouteTransition>
 </div>
 
 <style lang="scss" global>
   .root-container {
+    overflow: hidden;
     background-color: $color-background;
     position: relative;
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    .transition-wrapper {
-      all: inherit;
-    }
   }
 
   .main {
     padding-top: $navbar-height;
-    min-height: calc(100vh - $navbar-height);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
       sans-serif;
     color: $color-secondary;

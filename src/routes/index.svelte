@@ -6,41 +6,49 @@
 <Title title="" />
 
 <div class="main">
-  <div class="logo">
-    <div class="logo-icon">
-      <Logo />
+  <div class="floating">
+    <div class="logo">
+      <div class="logo-icon">
+        <Logo />
+      </div>
+      <div class="logo-text">
+        <div class="title-h1 logo-text-fight">FIGHT</div>
+        <div class="title-h2 logo-text-interactive">interactive</div>
+      </div>
     </div>
-    <div class="logo-text">
-      <div class="title-h1 logo-text-fight">FIGHT</div>
-      <div class="title-h2 logo-text-interactive">interactive</div>
+    <div class="links">
+      <a href="https://github.com/figtive" aria-label="GitHub" target="_blank" rel="noopener">
+        <i class="fab fa-github-square" />
+      </a>
+      <a href="https://twitter.com/figtive" aria-label="Twitter" target="_blank" rel="noopener">
+        <i class="fab fa-twitter-square" />
+      </a>
+      <a href="https://steamcommunity.com/groups/figtive" aria-label="Steam" target="_blank" rel="noopener">
+        <i class="fab fa-steam-square" />
+      </a>
     </div>
-  </div>
-  <div class="links">
-    <a href="https://github.com/figtive" aria-label="GitHub" target="_blank" rel="noopener">
-      <i class="fab fa-github-square" />
-    </a>
-    <a href="https://twitter.com/figtive" aria-label="Twitter" target="_blank" rel="noopener">
-      <i class="fab fa-twitter-square" />
-    </a>
-    <a href="https://steamcommunity.com/groups/figtive" aria-label="Steam" target="_blank" rel="noopener">
-      <i class="fab fa-steam-square" />
-    </a>
   </div>
 </div>
 <span class="bogos">👽</span>
 
 <style lang="scss">
   .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 0;
+    position: relative;
     // override default navbar padding for index page
     padding-top: 0;
-    height: 100vh;
+    .floating {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50vh;
+      transform: translateY(-50%);
+    }
   }
+
   .logo {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     user-select: none;

@@ -8,7 +8,7 @@
   <div class="navbar-container">
     {#if $page.path !== '/'}
       {#key $page.path}
-        <div class="navbar-brand" in:fly={{ x: -72, duration: 500 }} out:fly={{ x: 72, duration: 500 }}>
+        <div class="navbar-brand" in:fly={{ x: -4, duration: 500 }} out:fly={{ x: 4, duration: 500 }}>
           <a href="/">
             <Logo />
           </a>
@@ -17,6 +17,7 @@
     {/if}
     <div class="flex-grow" />
     <a href="/members" class="navbar-item">Members</a>
+    <a href="/about" class="navbar-item">about</a>
   </div>
 </nav>
 
