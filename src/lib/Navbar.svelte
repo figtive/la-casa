@@ -16,6 +16,7 @@
       {/key}
     {/if}
     <div class="flex-grow" />
+    <a href="/projects" class="navbar-item" sveltekit:prefetch>Projects</a>
     <a href="/members" class="navbar-item">Members</a>
     <a href="/about-us" class="navbar-item">About Us</a>
   </div>
