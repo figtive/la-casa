@@ -13,7 +13,9 @@
       };
     }
     return {
-      error: new Error(`Could not load projects! (${res.statusText})`),
+      props: {
+        error: `Could not load projects!${res.statusText && ` (${res.statusText})`}`,
+      },
     };
   }
 </script>
@@ -21,6 +23,7 @@
 <script lang="ts">
   import Title from '$lib/Title.svelte';
   export let projects = [];
+  export let error = '';
 </script>
 
 <Title title="Projects" description="Fight Interactive's projects" />
@@ -28,6 +31,12 @@
 <div class="main">
   <div class="container mx-auto px-4">
     <h1 class="title-h1">Projects</h1>
+    {#if error}
+      <div class="alert-error">{error}</div>
+      <div class="alert-info">
+        Check out our <a href="https://github.com/figtive" target="_blank" rel="noopener" class="link">GitHub</a> instead!
+      </div>
+    {/if}
     {#each projects as project (project.id)}
       <div class="mb-8">
         <a class="link" href={project.html_url} target="_blank" rel="noopener">{project.full_name}</a>
@@ -44,11 +53,11 @@
 
 <style lang="scss">
   .link {
-    font-weight: 600;
     line-height: 1.8rem;
   }
 
   .tag {
+    color: #eee;
     font-size: 0.8rem;
     line-height: 1.8rem;
     border: 1px solid $color-primary;
