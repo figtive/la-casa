@@ -42,6 +42,10 @@
 </div>
 
 <style lang="scss">
+  .link {
+    font-weight: 600;
+  }
+
   td {
     height: 3rem;
   }
