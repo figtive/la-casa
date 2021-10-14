@@ -17,7 +17,7 @@
     {/if}
     <div class="flex-grow" />
     <a href="/members" class="navbar-item">Members</a>
-    <a href="/about" class="navbar-item">about</a>
+    <a href="/about-us" class="navbar-item">About Us</a>
   </div>
 </nav>
 
