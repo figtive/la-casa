@@ -15,7 +15,7 @@
         </div>
       {/key}
     {/if}
-    <div class="flex-grow" />
+    <div class="spacer" />
     <a href="/projects" class="navbar-item">Projects</a>
     <a href="/members" class="navbar-item">Members</a>
     <a href="/about-us" class="navbar-item">About Us</a>
@@ -71,6 +71,9 @@
         background: $color-primary;
         mix-blend-mode: difference;
       }
+    }
+    .spacer {
+      flex-grow: 1;
     }
   }
 </style>
