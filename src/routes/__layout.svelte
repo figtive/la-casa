@@ -9,7 +9,6 @@
 <script lang="ts">
   import Navbar from '$lib/Navbar.svelte';
   import RouteTransition from '$lib/RouteTransition.svelte';
-  import '../tailwind.css';
 
   export let key;
 </script>
