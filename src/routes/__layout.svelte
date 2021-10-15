@@ -67,6 +67,7 @@
     .link {
       color: $color-primary;
       text-decoration: none;
+      font-weight: 600;
       position: relative;
       &:hover {
         text-decoration: none;
@@ -84,6 +85,43 @@
         width: 0;
         transition: 0.5s cubic-bezier(0.75, 0.75, 0.25, 1);
         background: $color-primary;
+      }
+    }
+
+    .alert {
+      padding: 1rem;
+      border-left: 8px solid;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &-success {
+        @extend .alert;
+        $color: #4caf50;
+        color: $color;
+        background: transparentize($color, 0.9);
+        border-color: $color;
+      }
+      &-info {
+        @extend .alert;
+        $color: #2196f3;
+        color: $color;
+        background: transparentize($color, 0.9);
+        border-color: $color;
+      }
+      &-warning {
+        @extend .alert;
+        $color: #ff9800;
+        color: $color;
+        background: transparentize($color, 0.9);
+        border-color: $color;
+      }
+      &-error {
+        @extend .alert;
+        $color: #f44336;
+        color: $color;
+        background: transparentize($color, 0.9);
+        border-color: $color;
       }
     }
   }
