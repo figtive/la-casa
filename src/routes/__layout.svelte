@@ -9,7 +9,6 @@
 <script lang="ts">
   import Navbar from '$lib/Navbar.svelte';
   import RouteTransition from '$lib/RouteTransition.svelte';
-  import '../tailwind.css';
 
   export let key;
 </script>
@@ -29,10 +28,11 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    box-sizing: border-box;
   }
 
   .main {
+    max-width: 80vw;
+    margin: auto;
     padding-top: $navbar-height;
     padding-bottom: 128px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
@@ -44,6 +44,7 @@
     }
 
     .title {
+      margin-top: 0;
       font-family: 'Urbanist', sans-serif;
       &-h1 {
         @extend .title;
