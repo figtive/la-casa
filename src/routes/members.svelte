@@ -19,6 +19,10 @@
       name: 'Wahyu Ananda Duli Tokan',
       username: 'wahyuadt',
     },
+    {
+      name: 'Nicolaus Christian Gozali',
+      username: 'nicolauscg',
+    },
   ];
 </script>
 
