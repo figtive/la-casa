@@ -4,13 +4,13 @@
 
 ## Service
 
-|   Name    | Stack                 |
-| :-------: | --------------------- |
-| Front-end | TypeScript, SvelteKit |
+|   Name   | Stack                 |
+| :------: | --------------------- |
+| Frontend | TypeScript, SvelteKit |
 
 ## Develop
 
-To begin developing, simply run the development server (do not use `yarn`):
+You have to use Node.js 16 or above. To begin developing, simply run the development server (do not use `yarn`):
 
 ```shell
 $ npm install
