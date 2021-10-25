@@ -16,6 +16,10 @@
       username: 'irbahhana',
     },
     {
+      name: 'Nicolaus Christian Gozali',
+      username: 'nicolauscg',
+    },
+    {
       name: 'Wahyu Ananda Duli Tokan',
       username: 'wahyuadt',
     },
