@@ -16,12 +16,12 @@
       username: 'irbahhana',
     },
     {
-      name: 'Wahyu Ananda Duli Tokan',
-      username: 'wahyuadt',
-    },
-    {
       name: 'Nicolaus Christian Gozali',
       username: 'nicolauscg',
+    },
+    {
+      name: 'Wahyu Ananda Duli Tokan',
+      username: 'wahyuadt',
     },
   ];
 </script>
